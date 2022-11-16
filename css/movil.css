@@ -1,0 +1,42 @@
+@import url(estilo.css);
+@media screen and (max-width: 480px){
+  header{
+    background-color: var(--blanco);
+  }
+  .caja_menu{
+    background-color: var(--gris);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:5px;
+    margin: 10px;
+    }
+    .caja_menu li{
+      width: 100%;
+    }
+    .caja_menu li a{
+      display: block;
+      border-bottom:1px #333 dotted;
+      width:350px;
+    }
+    #iconomenu{
+      display:block;
+    }
+    .logo{
+      width: 100%;
+      padding:10px;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between;
+      align-items:center;
+      }
+      .caja_texto h1{
+        width:500px;
+        box-shadow: #333;
+        font-size:30px;
+        line-height: 50px;
+        font-family: 'Arimo', sans-serif;
+        text-align: center;
+      }
+
+}

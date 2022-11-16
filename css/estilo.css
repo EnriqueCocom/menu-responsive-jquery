@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap');
+:root{
+  --gris: #f3f3f3;
+  --negro: #000000;
+  --blanco: #ffffff;
+  --verde:#6cb500;
+  --Gris-menu: #f3f3f3;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+  /* border: 1px red solid; */
+}
+header{
+  display: flex;
+  justify-content: space-evenly;
+  background: var(--Gris-menu);
+  flex-wrap: wrap;
+}
+
+/*Contenedor padre arriba*/
+
+/* Código logo*/
+.logo figure{
+  width: 200px;
+  /* border: 1px green solid; */
+  overflow: hidden;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#iconomenu{
+  color:#6cb500;
+  padding: 15px;
+  font-size:35px;
+  display: none;
+}
+/*Código menu ul*/
+.caja_menu{
+  list-style: none;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.caja_menu li a{
+  display: inline-block;
+  color:#333;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 10px 30px;
+  transition: all 0.5s ease;
+  }
+.caja_menu li a:hover{
+  color: var(--verde);
+}
+
+/* Código contenedor foto */
+.contenedor_foto{
+  background-image: url(../imagenes/foto_slide.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.caja_texto{
+  height:300px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+.caja_texto h1{
+  width:600px;
+  padding: 10px;
+  font-size:40px;
+  line-height: 50px;
+  font-family: 'Arimo', sans-serif;
+}
+
+.caja_titulo{
+  text-align: center;
+  padding: 20px;
+}
+.parrafo_verde{
+  color: var(--verde);
+}
+
+/* Código contenedor servicios */
+.contenedor_servicio{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.caja_servicio{
+  width:350px;
+  text-align: center;
+  background-color: var(--gris);
+  border-radius: 10px;
+  margin:20px;
+  padding:35px;
+}
+.caja_servicio figure img{
+  width: 70px;
+  overflow: hidden;
+}
+.caja_servicio h2{
+  margin-bottom: 10px;
+}
+
+footer{
+  background-color: var(--verde);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer figure img{
+  width: 250px;
+}
